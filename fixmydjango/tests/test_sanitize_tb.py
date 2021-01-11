@@ -39,8 +39,7 @@ def get_tb_lines_of_regular_ex():
         raise ValueError("test")
     except:
         exc_info = sys.exc_info()
-        tb_lines = traceback.format_exception(*exc_info)
-        return tb_lines
+        return traceback.format_exception(*exc_info)
 
 
 def test_is_django_exception():
